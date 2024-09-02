@@ -1,7 +1,7 @@
 <?php 
     session_start();
     require('db_class.php');
-    $obj = new Db_Class();//gitcheck
+    $obj = new Db_Class();//gitcheckstatus
 ?>
 <!DOCTYPE html>
 <html lang="en">
