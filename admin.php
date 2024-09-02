@@ -2,6 +2,7 @@
     session_start();
     require('db_class.php');
     $obj = new Db_Class();
+	//hi;
 ?>
 <!DOCTYPE html>
 <html lang="en">
