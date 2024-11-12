@@ -1,7 +1,19 @@
 <?php 
     session_start();
     require('db_class.php');
+	if($_SESSION["username"] == '')
+	{
+
+		?>
+		<script>
+		alert("Invalid Values Passed!");
+		window.location="mainlogin.php";
+		</script>
+		<?	
+		exit;
+	}
     $obj = new Db_Class();//gitcheckstatus
+	
 ?>
 <!DOCTYPE html>
 <html lang="en">

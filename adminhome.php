@@ -2,6 +2,7 @@
 <?php
 include_once('connection.php'); 
 include("adminheader.php");
+
 if(isset($_POST['delete']) && 'Delete' ){
 	print_r($_POST);
 	$sql="delete from user1 where id='".$_POST['rec_id']."'";

@@ -1,7 +1,21 @@
 <?php 
     session_start();
+	if($_SESSION["username"] == '')
+	{
+
+		?>
+		<script>
+		alert("Invalid Values Passed!");
+		window.location="mainlogin.php";
+		</script>
+		<?	
+		exit;
+	}
     require('db_class.php');
     $obj = new Db_Class();
+	
+	
+
 	//hi;
 ?>
 <!DOCTYPE html>

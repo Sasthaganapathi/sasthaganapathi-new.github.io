@@ -2,6 +2,17 @@
     session_start();
     require('db_class.php');
     $obj = new Db_Class();
+	if($_SESSION["username"] == '')
+	{
+
+		?>
+		<script>
+		alert("Invalid Values Passed!");
+		window.location="mainlogin.php";
+		</script>
+		<?	
+		exit;
+	}
 ?>
 <!DOCTYPE html>
 <html lang="en">

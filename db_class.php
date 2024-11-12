@@ -1,4 +1,5 @@
 <?php
+
 include_once('connection.php'); 
 class Db_Class{
     private $table_name = 'user';

@@ -2,6 +2,17 @@
 include('header.php');
 $users = $obj->getUsers();
 $sn=1;
+if($_SESSION["username"] == '')
+	{
+
+		?>
+		<script>
+		alert("Invalid Values Passed!");
+		window.location="mainlogin.php";
+		</script>
+		<?	
+		exit;
+	}
 if(isset($_POST['update'])){
 
     $user = $obj->getUserById();
